@@ -28,11 +28,11 @@ set undolevels=100
 
 set statusline=[%n]\ %{ModifiedFlag()}%f\ %=%h%r%w\ (%v,%l)\ %P\ 
 function ModifiedFlag()
-  if (&modified)
+  if (&modified)   " if condition starts here
     return "*"
   else
     return " "
-  endif
+  endif           "condition if ends here
 endfunction
 
 "
